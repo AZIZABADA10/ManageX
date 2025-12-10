@@ -43,7 +43,7 @@ if (isset($_POST['login_submit'])) {
         if ($user['role'] === 'admin') {
             header('Location: pages/admin_pages/home.php');
         }else{
-            header('Location: user_page.php');
+            header('Location: pages/user_pages/user_page.php');
         }
         exit();
     }

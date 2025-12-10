@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: linear-gradient(135deg, #000000, #1d11fd);
+    padding: 0 10px;
+}
+
+.header img {
+    height: 25px;
+    width: 25px;
+}
+
+.header input {
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(45, 111, 244);
+}
+
+
+.header button {
+    border-radius: 12px;
+    padding: 3px 12px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.btn_search {
+    background-color: red;
+}
+
+.btn_login {
+    background-color: rgb(7, 135, 7);
+}
+
+.btn_search:hover {
+    box-shadow: 5px 5px 10px rgba(193, 191, 191, 0.541);
+    background-color: rgb(165, 11, 11);
+}
+
+.btn_login:hover {
+    box-shadow: 5px 5px 10px rgba(193, 191, 191, 0.541);
+    background-color: rgb(4, 98, 4);
+}
+
+.carousel {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
