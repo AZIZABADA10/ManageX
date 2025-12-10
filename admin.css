@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    box-sizing: 0;
+}
+
+main {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px repeat(4, 138px);
+    display: grid;
+    grid-template-areas:
+        "header header header header header"
+        "aside article article article article"
+        "aside article article article article"
+        "aside article article article article"
+        "aside article article article article"
+    ;
+
+}
+
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    grid-area: header;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+header button {
+    padding: 6px 10px;
+
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: rgb(137, 1, 1);
+}
+
+aside {
+    background-color: rgb(24, 24, 24);
+    grid-area: aside;
+    border-right: 2px solid white;
+}
+
+article {
+    background-color: white;
+    grid-area: article;
+    overflow-y: scroll;
+}
+
+
+aside li {
+    background-color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: -30px;
+    list-style: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+aside li:hover {
+    background-color: rgb(137, 161, 182);
+}
+
+span {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+
