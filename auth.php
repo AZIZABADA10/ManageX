@@ -24,7 +24,7 @@ if (isset($_POST['register_submit'])) {
         ('$full_name','$email','$password','$role');");
 
     }
-    header('Location: index.php');
+    header('Location: authentification.php');
     exit();
 }
 
@@ -50,7 +50,7 @@ if (isset($_POST['login_submit'])) {
 
     $_SESSION['login_error'] = ' inccoret email or password';
     $_SESSION['form_active'] = 'login';
-    header('Location: index.php');
+    header('Location: authentification.php');
     exit();
 }
 
